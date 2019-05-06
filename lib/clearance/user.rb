@@ -161,7 +161,7 @@ module Clearance
 
       included do
         validates :email,
-          email: { strict_mode: true },
+          email: { strict_mode: false },
           presence: true,
           uniqueness: { allow_blank: true },
           unless: :email_optional?
